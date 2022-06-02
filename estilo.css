@@ -1,0 +1,405 @@
+
+	*{
+		margin: 0;
+		padding: 0;
+	}
+
+	body{
+		font-size: 1em;
+		font-family: Times, Times New Roman, serif;
+		background:#000000 url("../imagens/fundo2.jpg");
+	}
+
+
+
+
+
+/*		layout		*/
+
+
+
+
+
+
+	#area-cabecalho{
+		background-color: #000000 ;
+		padding: 15px;
+		text-align: center;
+	}
+
+	#area-logo, #area-menu {
+		padding: 10px;
+	}
+
+	#area-principal{
+
+		font-size: 17px;
+		font-family:arial, helvetica, sans-serif;;
+		background: #000000;
+		width: 1080px;
+		margin: 50px auto;
+		padding: 10px;
+	}
+
+	#area-conteudo, #area-lateral{
+		color:#B0B0B0 ;
+	}
+
+	#area-conteudo{
+		padding: 10px 150px;
+		width: 775px;
+		float: left;
+		background: #000000;
+	}
+
+
+	#rodape{
+		margin-top:50 px;
+		clear: both;
+		text-align: center;
+		padding: 10px;
+		color: #b0b0b0;
+		font-size: 12px;
+		background: url("../imagens/fundo1.jpg");
+		border-radius: 5px;
+	}
+
+
+
+
+
+
+
+	/* formatação do menu */
+
+
+
+	 
+
+
+	 ul{
+	 	margin: 0;
+	 	padding: 0;
+	 	list-style: none;
+	 	width: auto;
+	 	background: #B40000 url("../imagens/fundo1.jp");
+	 	border-radius: 10px;
+	 }
+
+	 ul li{
+	 	display: inline;
+
+	 }
+
+	 ul a{
+	 	display: inline-block;
+	 	padding: 0 5em;
+	 	line-height: 3em;
+	 	text-decoration: none;
+	 	color: #FF1616;
+	 	font-size: 18px;
+	 	border-radius: 5px;
+	 }
+
+	 ul a:hover{
+	 	color: #FFF;
+	 	background: #FF0000;
+	 }
+
+	#home #navegacao .home a,
+	#sobre #navegacao .sobre a,
+	#contato #navegacao .contato a {
+	    color: #FFF;
+	    background: #FF0000;
+	 }
+
+/*formatação texto*/
+
+
+
+
+h1{
+	font-family: Times, Times New Roman, serif;
+	color: #FF0000;
+	fo
+}
+
+
+hr{
+	border-color: #FF0000;
+	clear: both;
+
+}
+
+
+
+
+
+
+
+
+/* postagens - principal */
+
+.saiba{
+		text-decoration: none;
+		color: #FF0000;
+		float: right;		
+	}	
+
+	.postagem{
+		margin: 0;
+		padding: 0;
+	}
+
+
+
+
+
+
+
+
+/*area tattoo - menu principal*/ 
+
+	.postagem2{
+		padding:200px 0;
+	}
+
+	.img-tattoo{
+		margin: 50px auto;
+		float: left;
+		
+	}
+
+
+
+
+
+/* orcamento */
+
+
+
+
+
+fieldset{
+	margin-top: 25px;
+	border-color: #FF0000;
+	border-radius: 5px;
+}
+
+input{
+	background-color: #b0b0b0;
+	border-radius:1px;
+	border: none;
+	line-height: 25px;
+}
+
+textarea{
+	background-color: #b0b0b0;
+	border-radius: 1px;
+}
+
+#formulario{
+	padding: px 0 0;
+	margin: 0 ;
+	position: relative;
+}
+
+.nome,.telefone,.email,.text, .envio{
+	padding: 10px 25px;
+}
+
+.nome{
+	float: left;
+}
+
+}
+
+.email{
+	clear: both;
+}
+
+.arquivo{
+	background-color: #000000;
+
+}
+
+.enviar{
+	padding: 0px 50px ;
+	margin-left: 300px;
+	cursor: pointer;
+}
+
+
+
+
+
+
+/*área de contato*/
+
+#unidades{
+	clear: both;
+	padding: 100px 0 100px;
+}
+
+.area-unidades{
+	padding: 50px 0;
+}
+
+.unidades{
+	text-decoration: none;
+	color: #FF0000;
+}
+	
+.unidade1{
+	margin: 20px 0 0 50px ;
+	float: left;
+
+}
+
+.unidade2{
+	margin: 20px 100px 0 0;
+	float: right;
+
+}
+
+
+
+
+
+
+/* menu de contato */
+
+
+
+.contatos{
+	float: left;
+
+}
+
+.contatos2{
+
+	margin: 50px 0;
+	float: left;
+}
+
+.mapa{
+	margin: 40px 0;
+	border: 5px solid #FF0000;
+	float: right;
+
+}
+
+.mapa2{
+	margin: 50px 0;
+	border: 5px solid #FF0000;
+	float: right;
+
+}
+
+
+
+
+
+	/* responsividade */
+
+	@media screen and (max-width: 420px){
+		body{
+			width: 25em;
+		}
+}
+
+	@media screen and (max-width: 420px){
+		#area-principal{
+			width: 23em;
+			padding: 0.7em;
+			margin: ;
+
+		}
+	}
+
+
+	@media screen and (max-width: 420px){
+		#area-conteudo{
+			padding: 0.5em;
+			width: 20em;
+
+		}
+}
+
+
+
+	@media (max-width: 420px){
+		.postagem, .postagem2{
+
+		}
+	}
+
+	@media (max-width: 420px){
+		.img-tattoo{
+			display: flex;
+			flex-direction: column;
+			padding: 3.3em;
+		}
+	}
+
+
+
+
+	@media screen and (max-width: 420px){
+		#formulario{
+			display: none;
+		}
+}
+
+
+
+
+
+	@media screen and (max-width: 420px){
+		.area-unidades{
+			text-align: center;
+
+			
+		}
+}
+
+	@media screen and (max-width: 420px){
+			#unidades{
+			padding:;
+			}
+}
+
+	@media screen and (max-width: 420px){
+			.unidade1,.unidade2{
+			float: none;
+			margin-bottom: 0.5em;
+			padding: 0.5em;
+			margin: 0;
+			}
+}
+
+
+	@media screen and (max-width: 420px){
+		.mapa{
+			margin-bottom: 1em;
+			padding: em;
+
+
+		}
+}
+
+	@media screen and (max-width: 420px){
+		iframe{
+			width: 20em ;
+
+
+		}
+}
+
+
+	@media screen and (max-width: 420px){
+		#rodape{
+		width: 340px;
+	
+		}
+}
